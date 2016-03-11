@@ -11,7 +11,7 @@ if [ ! -f /config/nzbget.conf ]; then
   sed -i -e "s#\(ControlIP=\).*#\10.0.0.0#g" /config/nzbget.conf
   chown abc:abc /config/nzbget.conf
   chmod u+rw /config/nzbget.conf
-  mkdir -p /downloads/dst
+  mkdir -p /downloads/script
   chown -R abc:abc /downloads
 fi
 
