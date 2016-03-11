@@ -23,6 +23,11 @@ else
 	DOWNLOAD=$(grep stable-download /tmp/json  | cut -d '"' -f 4)
 fi
 
+if [ "$NZBTOMEDIA" ]; then
+	echo "Install NzbToMedia"
+	git clone git://github.com/clinton-hall/nzbToMedia.git /downloads/script
+fi
+
 if [ "$LOCAL_VERSION" != "$REMOTE_VERSION" ]; then
 		echo "Not up-to-date\Installed"
 		wget -O /tmp/nzbget.run "$DOWNLOAD"
