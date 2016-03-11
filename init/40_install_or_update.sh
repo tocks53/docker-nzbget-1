@@ -24,7 +24,7 @@ else
 fi
 
 if [ "$NZBTOMEDIA" ]; then
-	echo "Install NzbToMedia"
+	echo "Install NzbToMedia from https://github.com/clinton-hall/nzbToMedia"
 	git clone git://github.com/clinton-hall/nzbToMedia.git /downloads/script
 fi
 
